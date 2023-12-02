@@ -10,10 +10,10 @@ public class Ques2_ArmstrongNumber {
 		
 		int sum=0;
 		int temp=N;
-		
+		int length=String.valueOF(N).length();		
 		while (temp > 0) {
             int digit = temp % 10;
-            sum += digit * digit * digit;
+            sum += Math.pow(digit,length);
             temp /= 10;
         }
 
